@@ -4,8 +4,31 @@
 
 ## 安装
 
+### 从 GitHub 安装
+
+安装指定版本（推荐）：
 ```bash
-pip install bee-core-definitions
+pip install git+https://github.com/AbelChe/bee-core-definitions.git@v0.1.0
+```
+
+安装最新版本：
+```bash
+pip install git+https://github.com/AbelChe/bee-core-definitions.git
+```
+
+### 在 requirements.txt 中使用
+
+```txt
+git+https://github.com/AbelChe/bee-core-definitions.git@v0.1.0
+```
+
+### 在 pyproject.toml 中使用
+
+```toml
+[project]
+dependencies = [
+    "bee-core-definitions @ git+https://github.com/AbelChe/bee-core-definitions.git@v0.1.0"
+]
 ```
 
 ## 功能特性
